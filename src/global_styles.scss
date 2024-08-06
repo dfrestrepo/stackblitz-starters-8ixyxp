@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Add application styles & imports to this file! */
+
+///*! cds-config.scss | Circutor Design System
+/// ======================================================
+
+/// Set the config variables to create the font-face
+/// * Only needed if your project use Circutor typography or another custom typography.
+/// ======================================================
+
+$cds-font-family-400: 'Poppins';
+
+/// Set the path variables of Circutor Icons location
+/// ======================================================
+
+$config-icons-path-eot: '*/src/fonts/CDSIcons.eot';
+$config-icons-path-ttf: '*/src/fonts/CDSIcons.ttf';
+$config-icons-path-woff: '*/src/fonts/CDSIcons.eoff';
+$config-icons-path-svg: '*/src/fonts/CDSIcons.svg';
+
+/// Override the font family variables
+/// ======================================================
+
+/*
+$cds-font-family-400: sans-serif;
+$cds-font-weight-400: 400;
+$cds-font-family-700: sans-serif;
+$cds-font-weight-700: 700;
+*/
+
+/// Override config variables
+/// ======================================================
+
+/*
+$cds-size-factor: 0.2;
+$cds-br: 0rem; //Use base-10 in rem. I.e. 20px = 2.0rem
+*/
+
+/// Override available color variables
+/// ======================================================
+
+// $cds-color-text-default: blue;
+$cds-color-body-light: red;
+/// $cds-color-primary-light: blue;
+/// $cds-color-background-light: yellow;
+
+@import '@circutor/ui/scss/common/cds-core';
+
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  gap: 16px;
+}
